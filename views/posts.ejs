@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Posts by user <%= userId %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1> Posts by <%= userId %></h1>
+    <ul>
+        <% posts.forEach((post, index) => { %>
+        <li><%= post.title %></li>
+        <% }); %>
+    </ul>
+  </body>
+</html>
